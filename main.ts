@@ -40,9 +40,9 @@ const keepInBounds = (num: number) => keepInRange(num, 0.5, N - 0.5)
 const keepInBox = (num: number) => keepInRange(num, 4, N * SCALE - 4)
 
 const coolColor = (x, y) => {
-    const nx = keepInRange(x, 0, 255)
-    const ny = keepInRange(y, 0, 255)
-    return `rgb(${0 + Math.floor(nx)}, ${0 + Math.floor(ny)}, 120)`
+    const nx = keepInRange(x, -119, 50)
+    const ny = keepInRange(y, -119, 135)
+    return `rgb(${120 + Math.floor(nx)}, ${120 + Math.floor(ny)}, 255)`
 }
 
 const coordinatesToDegree = (x: number, y: number): number => {
